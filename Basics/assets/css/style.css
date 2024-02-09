@@ -1,0 +1,216 @@
+/*P6.HTML*/
+.cssColor1 {
+  background-color: rgb(0, 255, 255);
+}
+.cssColor2 {
+  background-color: #ff0000;
+}
+.cssColor3 {
+  background-color: blue;
+}
+.commonCssColors {
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+/*P7.HTML*/
+.jumbotron {
+  background-color: red;
+  border-radius: 10px;
+}
+.cssFont {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: unset;
+  font-variant: small-caps;
+}
+
+/*  p8.html*/
+.cssText {
+  text-align: justify;
+
+  text-decoration: underline;
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  line-height: 2;
+  text-transform: unset;
+}
+.cssText > p {
+  text-indent: 100px;
+}
+
+/*p9.html*/
+
+.navbar {
+  background-color: yellow;
+}
+
+.navbar > ul {
+  list-style-type: decimal;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.navbar > ul > li {
+  display: inline-block;
+
+  padding: 20px;
+}
+.navbar > ul > il:hover {
+  background-color: pink;
+}
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: blue;
+}
+.navbar > ul > li > a:hover {
+  text-decoration: none;
+  color: orange;
+  padding: 20px;
+  background-color: white;
+}
+.navbar img {
+  height: 54px;
+}
+
+/*p10.html*/
+.list-marker-position > ul > li {
+  padding: 20px;
+  background-color: orange;
+
+  margin-bottom: 20px;
+}
+.list-marker-position > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+.list-marker-position > ul > li::marker {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*p11.html*/
+
+.list-icon > ul > li {
+  margin: 20px;
+
+  list-style-image: url("../images/navigation.png");
+}
+
+/*p12.html*/
+.list-shortHand > ul > li {
+  background-color: orange;
+  padding: 20px;
+  margin-bottom: 20px;
+  /*
+    list-style-type:decimal;
+    list-style-position:inside;
+    list-style-image:url(..images/navigation.png);
+    */
+  list-style: decimal inside url(../images/navigation.png);
+}
+
+/*p13.html*/
+
+.empty-cell-table {
+  empty-cells: hide;
+}
+
+/*p14.html*/
+/*
+  .odd-even-table{
+    background-color: pink;
+  }*/
+/*
+  .odd-even-table tr{
+    background-color: green;
+  }*/
+
+.odd-even-table tr:nth-child(odd) {
+  background-color: red;
+}
+.odd-even-table tr:nth-child(even) {
+  background-color: blue;
+}
+.odd-even-table tr:hover {
+  background-color: orange;
+}
+.odd-even-table > caption {
+  caption-side: bottom;
+  color: brown;
+  background-color: pink;
+}
+.odd-even-table td {
+  height: 100px;
+  vertical-align: bottom;
+}
+/*p15.html*/
+.layout-table,
+.layout-table th,
+.layout-table td {
+  border: 2px solid red;
+  border-collapse: collapse;
+  padding: 20px;
+}
+.layout-table {
+  width: 100%;
+  table-layout: fixed;
+}
+.layout-table td,
+.layout-table th {
+  overflow: scroll;
+}
+
+/*p16.html*/
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: yellow;
+}
+header > nav > ul {
+  list-style-type: none;
+  float: right;
+}
+header > nav > img {
+  height: 64px;
+}
+header > nav > ul > li {
+  display: inline-block;
+  padding: 20px;
+}
+header > nav > ul > li > a {
+  color: red;
+  text-decoration: none;
+}
+header > nav > ul > li > a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: orange;
+}
+/*P17.HTML*/
+.banner1 {
+  background-color: red;
+}
+.bannerCommonClass {
+  color: orange;
+  padding: 20px;
+  height: 60vh;
+  text-align: center;
+}
+.bannerCommonClass > h1 {
+  font-size: 50px;
+}
+.bannerCommonClass > h1:hover {
+  color: blue;
+}
+/*p18.html*/
+
+.banner2 {
+  background-image: url(../images/image1.jpg);
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}

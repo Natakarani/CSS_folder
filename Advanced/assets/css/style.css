@@ -1,0 +1,308 @@
+.title {
+  background-color: red;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.title > h2 {
+  color: blue;
+}
+.title > p {
+  color: pink;
+  font-size: 20px;
+}
+/*common class*/
+.common {
+  background-color: grey;
+  padding: 20px;
+  margin: 20px;
+  border: 2px dotted brown;
+}
+.cssOutline {
+  outline: 2px solid orange;
+  border-radius: 10px;
+}
+/*p3.html*/
+.cssOverflow > p {
+  text-align: justify;
+  line-height: 2;
+  border: 2px solid green;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+}
+.cssOverflow > p:last-child {
+  white-space: collapse;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*p4.html*/
+.cssWhiteSpace {
+  /**/
+  white-space: pre; /*display the all content in one line as it what we give*/
+  /*pre-wrap: will give same like what we give but comes to next line after line completed*/
+}
+
+/*p5.html*/
+.cssUnits > h3:nth-child(1) {
+  margin: 0.5in;
+}
+.cssUnits > h3:nth-child(2) {
+  line-height: 1cm;
+}
+.cssUnits > h3:nth-child(3) {
+  word-spacing: 4mm;
+}
+.cssUnits > h3:nth-child(4) {
+  font-size: 19pt;
+}
+.cssUnits > h3:nth-child(5) {
+  font-size: 1pc;
+}
+.cssUnits > h3:nth-child(6) {
+  font-size: 35px;
+}
+/*p6.html*/
+.cssVisibilityDisplay > p {
+  background-color: pink;
+  padding: 20px;
+  border: 2px solid blue;
+}
+.cssVisibilityDisplay > .cssVisibility {
+  visibility: hidden;
+}
+.cssVisibilityDisplay > .cssDisplay {
+  display: none; /*element get erased*/
+}
+/*p7.html*/
+.cssWordWrap > p {
+  background-color: pink;
+  padding: 20px;
+  word-wrap: break-word;
+}
+/*p8.html*/
+.cssResize {
+  background-color: red;
+  resize: both;
+  overflow: auto;
+}
+/*p9.html*/
+.cssOffsetOutline {
+  outline: 2px solid blue;
+  outline-offset: 10px;
+}
+/*p10.html*/
+.cssColumnCount {
+  line-height: 2;
+  text-align: justify;
+  column-count: 4;
+  column-gap: 100px;
+
+  /*column-fill:balance-all;*/
+  column-rule: 2px solid blue;
+  column-width: 500px;
+}
+.cssColumnCount > h1 {
+  column-span: all;
+}
+/*p11.html*/
+.cssOpacity > p {
+  background-color: teal;
+  color: red;
+  opacity: 0.4; /*appling to both background color and font color so for that only for to give opacity to font use rgba*/
+  padding: 20px;
+}
+.cssOpacity > div {
+  background-color: rgb(128, 128, 67, 0.4);
+  color: rgb(12, 128, 67, 0.4);
+  padding: 20px;
+}
+
+/*p12.html*/
+.cssAttribute > h1 {
+  color: red;
+}
+.cssAttribute > p {
+  color: blue;
+}
+.cssAttribute > [title] {
+  background-color: pink;
+}
+.cssAttribute > p[title] {
+  padding: 20px;
+}
+.cssAttribute > h1[title] {
+  font-style: italic;
+}
+.cssAttribute1 > p > abbr[id] {
+  background-color: green;
+  color: brown;
+}
+
+.cssAttribute1 > form > [type] {
+  width: 100px;
+  height: 24px;
+  margin-bottom: 20px;
+}
+.cssAttribute1 > form > [input="text"] {
+  background-color: red;
+  color: pink;
+}
+.cssAttribute1 > form > [input="submit"] {
+  border: 2px solid blue;
+}
+
+/*p13.html*/
+.cssAttribute > div > img[title~="nature"] {
+  border: 2px solid red;
+  padding: 20px; /*here using general selector means it will select next all the matching siblings(nature is common to both imgs)*/
+}
+/*p14.html*/
+.cssAttribute > div > h3[title|="header"] {
+  background-color: pink;
+}
+/*p15.html*/
+.cssAttribute > h3[title|="header"] {
+  background-color: pink;
+}
+/*p16.html*/
+.cssAttribute > div > p[title$="header"] {
+  background-color: pink; /*even space is not there if that title value get selected the styles wil apply*/
+}
+
+/*p17.html*/
+.cssAttribute > section > p[class*="te"] {
+  background-color: blue; /*substring match selector commons are selected so styles get applied to that matched ones*/
+}
+/*p18.html*/
+.cssPseudoClass > h1 {
+  color: red;
+}
+.cssPseudoClass > a:hover {
+  color: white;
+}
+.cssPseudoClass > a:link {
+  color: green;
+}
+.cssPseudoClass > a:active {
+  color: pink;
+}
+.cssPseudoClass > a:visited {
+  color: brown;
+}
+
+/*p19.html*/
+.cssPseudoElement > section:first-child::first-line,
+.cssPseudoElement > section:nth-child(2)::first-letter {
+  background-color: pink;
+  color: blue;
+}
+.cssPseudoElement > section:nth-child(2)::first-letter {
+  font-size: 39px;
+  font-weight: bold;
+}
+.cssPseudoElement > section:last-child > h1::before {
+  content: "before h1";
+  color: brown;
+  background-color: blueviolet;
+}
+
+.cssPseudoElement > section:last-child > h1::after {
+  content: "After h1";
+  background-color: aqua;
+}
+
+/*p20.html*/
+.cssPosition > h1:first-child,
+.cssPosition > div > h1:first-child {
+  background-color: pink;
+}
+.cssPosition > h1:nth-child(2),
+.cssPosition > div > h1:nth-child(2) {
+  background-color: orange;
+}
+.cssPosition > h1:nth-child(3),
+.cssPosition > div > h1:last-child {
+  background-color: red;
+  color: blue;
+}
+.cssPosition h1 {
+  color: bisque;
+  padding: 20px;
+}
+.cssPosition > .second {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.cssPosition > div {
+  border: 2px solid blue;
+  padding: 20px;
+  position: relative;
+}
+.cssPosition > div > .fifth {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.cssPosition > .seven {
+  background-color: brown;
+}
+.cssPosition > .eight {
+  background-color: chartreuse;
+  position: sticky;
+  top: 0;
+}
+.cssPosition > .nine {
+  background-color: rgb(23, 229, 236);
+  position: fixed;
+  top: 45%;
+  right: 0;
+  transition: 1s;
+}
+.cssPosition > .nine:hover {
+  right: 2%;
+}
+/*p21.html*/
+.zindex{
+  position: relative;
+  height: 300px;
+}
+.zindex>section{
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  color:blueviolet;
+  position: absolute;
+}
+
+.zindex>.first{
+  background-color: chartreuse;
+  top:10px;
+  left:10px;
+  z-index: 1;
+  color:white;
+}
+.zindex>.second{
+  background-color: rgb(4, 0, 255);
+  top:50px;
+  left:50px;
+  z-index: 2;
+  color:white;
+}
+.zindex>.third{
+  background-color: rgb(255, 0, 0);
+  top:100px;
+  left:100px;
+  z-index: 3;
+  color:white;
+}
+.zindex>.second:hover{
+  z-index: 4;
+}
+.zindex>.first:hover{
+  z-index: 4;
+}

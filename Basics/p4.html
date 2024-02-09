@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICS</title>
+    <style>
+       
+       .combination+h5+h5{
+            color:red;
+            padding:20px;
+            background-color: pink;
+        }
+
+        .combination+h5+.test{
+            color:GREEN;
+            padding:20px;
+            background-color: black;
+        }
+        .combination+h5{
+            color:orange;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>there are 4 different combinations in css</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>descendent selector(Using space)</li>
+        <li>child selector(Using > child)</li>
+
+        <li>adjacent sibling  selector(Using + symbol)</li>
+        <li>general sibling selector(Using ~ symbol)</li>
+
+
+    </ol>
+    <hr>
+    <h1>ADJACENT SIBILNG SELECTOR(USING + SYMBOL) example...</h1>
+    <hr>
+    <section class="combination" id="akhil">
+        <h3>first h3 tag..! (child element)</h3>
+        <p>first paargraph..! (child element)</p>
+
+        <h3>second h3 tag..! (child element)</h3>
+        <p>second paargraph..! (child element)</p>
+
+        <h3>third h3 tag..! (child element)</h3>
+        <p>third paargraph..! (child element)</p>
+
+        <div>
+            <h3>fourth h3 tag...! (grand child element)</h3>
+            <p>fourth paragraph...!(grand child element)</p>
+        </div>
+
+        <h3>fifth h3 tag...!(child element)</h3>
+        <p>third h3 tag..! (child element)</p>
+
+    </section>
+    <h5>this is first h5</h5>
+    <h5 class="test">this is second h5</h5>
+    <h5>this is third h5</h5>
+
+    <h5>this is fourth h5</h5>
+
+</body>
+</html>

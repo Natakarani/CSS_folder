@@ -1,0 +1,75 @@
+/*title code*/
+/*p1.html*/
+.jumbotron{
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+    color:green;
+    border-radius: 10px;
+    text-align: center;
+}
+/*common code*/
+.cssPadding>h1, .cssBorder>h1, .cssMargin>h1{
+    background-color: pink;
+    color:blue;
+    border-radius: 5px;
+}
+/*css padding code*/
+.cssPadding>h1:nth-child(1){
+    padding: 50px;/*all sides*/
+}
+.cssPadding>h1:nth-child(2){
+    padding: 30px 20px;/*vertical horizontal sides*/
+}
+.cssPadding>h1:nth-child(3){
+    padding: 0px 20px 10px;/*top horizontal bottom sides*/
+}
+.cssPadding>h1:nth-child(4){
+    padding: 50px 10px 90px 4px;/*top right bottom left sides*/
+}
+/*css border code*/
+/*p2.html*/
+.cssBorder>h1{
+    padding: 20px;
+}
+.cssBorder>h1:nth-child(1){
+    border: 2px solid red;
+}
+.cssBorder>h1:nth-child(2){
+    border:4px;
+border-color: red blue;
+border-style: solid;
+}
+.cssBorder>h1:nth-child(3){
+    border:4px;
+border-color: red blue grey;
+border-style: solid;
+}
+.cssBorder>h1:nth-child(4){
+    border:4px;
+border-color: red blue grey green;
+border-style: solid;
+}
+/*css margin code*/
+/*p3.html*/
+.cssMargin>h1:nth-child(1){
+    margin: 40px;
+}
+.cssMargin>h1:nth-child(2){
+    margin: 40px 20px;
+}
+.cssMargin>h1:nth-child(3){
+    margin: 40px 20px 60px;
+}
+.cssMargin>h1:nth-child(4){
+    margin: 40px 10px 30px 5px;
+}
+/*code for box model*/
+/*p4.html*/
+.cssBoxModel{
+    background-color: blue;
+    padding: 20px;
+    margin:20px;
+    border:2px solid green;
+    color:orange;
+}
